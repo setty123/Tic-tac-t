@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Tic Tac Toe</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="login-side">
+                <div class="heading">
+                    <p>
+                        <span class="word1"> Hey</span>
+                        <span class="word2"> Champ &#128075;</span>
+                    </p>
+                    <p2>
+                        Game is waiting for you !
+                    </p2>
+                </div>
+                <img class="img-visible" src="/images/ttt.svg" alt="logo"> 
+                <input type="text" id="username" placeholder="Usename" required>
+                <input type="text" id="password" placeholder="Password" required>
+                <label class="cbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Show password
+                  </label>
+                <button id="login" onclick="auth()">Sign In</button>
+            </div>
+        </div>
+            <div class="image-side">    
+                <img src="/images/ttt.svg" alt="logo" style="width: 250px;">           
+                <img src="/images/logo ttt.svg" width="180px"> 
+            </div>
+    </div>
+</body>
+
+
+
+
+
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword }from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC3yUhKEZtZw_r2Z5A4CyJgcOV_Z4vDwfY",
+      authDomain: "tic-tac-toe-3250d.firebaseapp.com",
+      databaseURL: "https://tic-tac-toe-3250d-default-rtdb.firebaseio.com",
+      projectId: "tic-tac-toe-3250d",
+      storageBucket: "tic-tac-toe-3250d.appspot.com",
+      messagingSenderId: "538821044835",
+      appId: "1:538821044835:web:9efd32b5a099b35ac3e656",
+      measurementId: "G-NLQVLTZQ40"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    console.log("anc")
+  </script> -->
+</html>

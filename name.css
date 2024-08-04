@@ -1,0 +1,120 @@
+body {
+    background-color: #10A4B0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-image: url(/images/bg\ image.svg);
+    background-repeat: no-repeat;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 85%;
+    background-color: #034951;
+    border-radius: 10px;
+    gap: 37px;
+    box-shadow: 0px 2px 5px #AEDDE5;
+}
+
+.names {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 15px 0px;
+}
+
+/* .text {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 30px;
+} */
+
+.heading p2 {
+    font-size: 20px;
+}
+
+input {
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    height: 30px;
+    padding: 5px 15px;
+    width: 250px;
+}
+
+input::placeholder {
+    color: white; 
+    opacity: 1;  
+}
+
+input:focus {
+    border-color: #66e987;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+}
+
+.uri-goback {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.uri-goback a {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+
+
+.uri-goback a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.proceed  {
+    font-size: 15px;
+    font-weight: 300;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #ED7C1E;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #ED7C1E;
+    border: 2px solid #ED7C1E;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+@media only screen and (max-width:625px) {
+    body {
+        background-image: none;
+        background-color: #034951;;
+    }
+    .container3 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}

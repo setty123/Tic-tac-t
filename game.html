@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Game Page</title>
+</head>
+<body>
+    <div class="container4">
+        <div class="center">
+            <div class="player">
+                    <div class="round">
+                        <div class="round1">
+                             Round 1
+                        </div>
+                        <div class="which-player">
+                          <i class="fa fa-chevron-right" style="color: #FF8C00; size: 100px;"></i>
+                          <div style="color: #ffffff; padding-left: 5px;">Player 1</div>
+                        </div>  
+                          <div style="color: #C0C0C0; padding-top: 5px;">Player 2</div>
+                    </div>
+          </div>
+        <div class="main">
+            <div class="logo">
+                <img src="/images/ttt.svg">
+                <!-- <p style="color: white; font-size: 20px; text-align: center;"> Single-player</p> -->
+                <div style="color: white; font-size: 20px; text-align: center; padding-top: 5px;"> 
+                    Single-player
+                </div>
+            </div>
+            <div class="game-board">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+            </div>
+            <div class="show">
+              <div class="round1">
+                   Round 1
+              </div>
+              <div class="which-player">
+                <i class="fa fa-chevron-right" style="color: #FF8C00; size: 100px;"></i>
+                <div style="color: #ffffff; padding-left: 5px;">Player 1</div>
+              </div>  
+                <div style="color: #C0C0C0; padding-top: 5px;">Player 2</div>
+          </div>
+            <button class="restart">Restart</button>
+            
+            <div class="show-history">
+              <a href="">Show history</a>
+            </div>
+            <a href="">Exit Game</a>
+        </div>
+    </div>
+        <div class="history">
+            <div class="inner">
+                <div class="winners-heading">
+                    <p style="font-size: 20px; color: white; padding-right: 15px; font-weight: 500;">
+                        Winners
+                    </p>
+                    <img src="/images/Trophy.svg">
+                </div>
+                <div class="winners">
+                    <ol reversed>
+                        <li>Player 1</li>
+                        <li>Player 2</li>
+                        <li>Player 1</li>
+                        <li>Player 1</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
