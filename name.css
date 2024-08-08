@@ -23,7 +23,7 @@ body {
     box-shadow: 0px 2px 5px #AEDDE5;
 }
 
-.names {
+/* .names {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     gap: 35px;
     padding: 15px 0px;
-}
+} */
 
 /* .text {
     width: 45%;
@@ -47,7 +47,7 @@ body {
     font-size: 20px;
 }
 
-input {
+/* input {
     background-color: transparent;
     border-radius: 5px;
     color: white;
@@ -66,12 +66,62 @@ input:focus {
     border-color: #66e987;
     box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
     outline: none;
+} */
+/* .form-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.form-group {
+    position: relative;  
+    /* margin-bottom: 2rem; */
 }
+
+.form-input {
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    height: 30px;
+    padding: 5px 15px;
+    width: 250px;
+    font-size: 15px;
+    background: none;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #66e987;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-left: 5px ;
+    color: #ffffff;
+    font-size: 15px;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -12px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
 
 .uri-goback {
     text-align: center;
     padding-top: 10px;
 }
+
 
 .uri-goback a {
     text-decoration: none;

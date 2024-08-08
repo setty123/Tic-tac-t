@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>test Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="test.js" defer></script>
+    <title>Tic Tac Toe</title>
+
+
 </head>
 <body>
-    <div class="container3">
-        <div class="logo">
-            <img src="/images/ttt.svg">
-            <div style="color: white; font-size: 20px; text-align: center; padding-top: 5px;"> Single-player</div>
+    <div class="container">
+        <div class="form">
+            <div class="login-side">
+                <div class="heading">
+                    <p>
+                        <span class="word1"> Hey</span>
+                        <span class="word2"> Champ &#128075;</span>
+                    </p>
+                    <p2>
+                        Game is waiting for you !
+                    </p2>
+                </div>
+                <img class="img-visible" src="/images/ttt.svg" alt="logo"> 
+                <!-- <input type="text" id="username" placeholder="Usename" required>
+                <input type="text" id="password" placeholder="Password" required> -->
+                <div class="form-group">
+                    <input type="text" id="username" class="form-input" placeholder=" " required>
+                    <label for="input1" class="form-label">First Input</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="input2" class="form-input" placeholder=" " required>
+                    <label for="input2" class="form-label">Second Input</label>
+                </div>
+                <label class="cbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Show password
+                  </label>
+                <button id="login" onclick="auth()">Sign In</button>
+            </div>
         </div>
-        <!-- <div class="names">
-            <input class="text" type="text" placeholder="Player 1 - X name ">
-            <input class="text" type="text" placeholder="Player 2 - 0 name ">
-        </div> -->
-        <!-- <div class="form-container"> -->
-            <div class="form-group">
-                <input type="text" id="input1" class="form-input" placeholder=" " required>
-                <label for="input1" class="form-label">First Input</label>
+            <div class="image-side">    
+                <img src="/images/ttt.svg" alt="logo" style="width: 250px;">           
+                <img src="/images/logo ttt.svg" width="180px"> 
             </div>
-            <div class="form-group">
-                <input type="text" id="input2" class="form-input" placeholder=" " required>
-                <label for="input2" class="form-label">Second Input</label>
-            </div>
-        <!-- </div> -->
-        <div class="last-section">
-            <button class="proceed">Proceed</button>
-            <div class="uri-goback">
-                <a href="" style="font-weight: 300;">Go back</a>
-            </div>
-        </div>
     </div>
 </body>
 </html>

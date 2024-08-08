@@ -74,6 +74,7 @@ body {
 }
 
 .proceed  {
+    display: none;
     height: 40px;
     width: 110px;
     border-radius: 5px;
@@ -112,26 +113,60 @@ a:hover {
 }
 
 
-.single, .multi, .blitz {
+.single {
     padding: 20px;
     text-align: center;
 }
+/* .single, .multi, .blitz {
+    padding: 20px;
+    text-align: center;
+} */
 
 
-.single:hover, .multi:hover, .blitz:hover {
-    /* border-color: #66e987;    */
-    border: 1px solid #66e987 ;
+ /* .single:hover, .multi:hover, .blitz:hover {
+    border: 1px solid #66e987;
     box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
     border-radius: 5px;
-    /* transition: 0.1s ease-in-out; */
     cursor: pointer;
     color: #FF8C00;
 }
 
 .single:hover .mode-text, .multi:hover .mode-text, .blitz:hover .mode-text {
     color: #FF8C00;
-    /* color: #66e987; */
+} */
+
+.active, .single:hover{
+    border: 1px solid #66e987;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FF8C00;
 }
+
+/* .active, .single:hover .mode-text{
+    color: #FF8C00;
+} */
+ 
+.single:hover .mode-text {
+    color: #FF8C00;
+}
+.single.active .mode-text {
+    color: #FF8C00;
+}
+
+/* Styles for active */
+/* .single:active, .multi:active, .blitz:active {
+    border: 1px solid #66e987;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FF8C00;
+}
+
+.single:active .mode-text, .multi:active .mode-text, .blitz:active .mode-text {
+    color: #FF8C00;
+} */
+
 
 
 @media only screen and (max-width:1245px) {
