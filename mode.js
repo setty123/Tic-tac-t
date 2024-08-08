@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "name.html";
     });
 
-    // Loop through each element with the class 'single'
+
     singleMode.forEach(singleMode => {
         singleMode.addEventListener('click', function() {
             document.querySelector('.single.active')?.classList.remove('active');
