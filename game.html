@@ -10,6 +10,12 @@
 </head>
 <body>
     <div class="container4">
+        <div class="popup">
+            <div class="winner-pop"> Player 1 wins</div>
+            <img src="/images/Trophy.svg" style="padding-bottom: 70px; width: 100px;">
+            <button class="play-again">Play again</button>
+            <a href="">Exit Game</a>
+        </div>
         <div class="center">
             <div class="player">
                     <div class="round">
@@ -18,9 +24,9 @@
                         </div>
                         <div class="which-player">
                           <i class="fa fa-chevron-right" style="color: #FF8C00; size: 100px;"></i>
-                          <div style="color: #ffffff; padding-left: 5px;">Player 1</div>
+                          <div style="color: #ffffff; padding-left: 5px;" id="displayFirst">Player 1</div>
                         </div>  
-                          <div style="color: #C0C0C0; padding-top: 5px;">Player 2</div>
+                          <div style="color: #C0C0C0; padding-top: 5px;" id="displaySecond">Player 2</div>
                     </div>
           </div>
         <div class="main">

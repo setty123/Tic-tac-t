@@ -10,7 +10,6 @@
     <script src="login.js"></script>
     <title>Tic Tac Toe</title>
 
-
 </head>
 <body>
     <div class="container">
@@ -26,8 +25,16 @@
                     </p2>
                 </div>
                 <img class="img-visible" src="/images/ttt.svg" alt="logo"> 
-                <input type="text" id="username" placeholder="Usename" required>
-                <input type="text" id="password" placeholder="Password" required>
+                <!-- <input type="text" id="username" placeholder="Usename" required>
+                <input type="text" id="password" placeholder="Password" required> -->
+                <div class="form-group">
+                    <input type="text" id="username" class="form-input" placeholder=" " required>
+                    <label for="input1" class="form-label">User name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="password" class="form-input" placeholder=" " required>
+                    <label for="input2" class="form-label">Password</label>
+                </div>
                 <label class="cbox">
                     <input type="checkbox">
                     <span class="checkmark"></span>Show password
