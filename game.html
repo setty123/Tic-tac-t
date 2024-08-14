@@ -10,62 +10,64 @@
 </head>
 <body>
     <div class="container4">
-        <div class="popup">
-            <div class="winner-pop"> Player 1 wins</div>
-            <img src="/images/Trophy.svg" style="padding-bottom: 70px; width: 100px;">
-            <button class="play-again">Play again</button>
-            <a href="">Exit Game</a>
-        </div>
         <div class="center">
             <div class="player">
-                    <div class="round">
-                        <div class="round1">
-                             Round 1
-                        </div>
-                        <div class="which-player">
-                          <i class="fa fa-chevron-right" style="color: #FF8C00; size: 100px;"></i>
-                          <div style="color: #ffffff; padding-left: 5px;" id="displayFirst">Player 1</div>
-                        </div>  
-                          <div style="color: #C0C0C0; padding-top: 5px;" id="displaySecond">Player 2</div>
+                <div class="round">
+                    <div class="round1" id="roundDisplay">
+                        Round 1
                     </div>
-          </div>
-        <div class="main">
-            <div class="logo">
-                <img src="/images/ttt.svg">
-                <!-- <p style="color: white; font-size: 20px; text-align: center;"> Single-player</p> -->
-                <div style="color: white; font-size: 20px; text-align: center; padding-top: 5px;"> 
-                    Single-player
+                    <div class="which-player">
+                        <i class="fa fa-chevron-right" id="chevronFirst" style="color: #FF8C00; size: 100px;"></i>
+                        <div style="color: #ffffff; padding-left: 5px;" id="displayFirst"></div>
+                    </div>
+                    <div class="which-player">
+                        <i class="fa fa-chevron-right" id="chevronSecond" style="color: #FF8C00; size: 100px;"></i>
+                        <div style="color: #C0C0C0; padding-top: 5px; padding-left: 5px;" id="displaySecond"></div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="game-board">
-                <div class="box" id="0"></div>
-                <div class="box" id="1"></div>
-                <div class="box" id="2"></div>
-                <div class="box" id="3"></div>
-                <div class="box" id="4"></div>
-                <div class="box" id="5"></div>
-                <div class="box" id="6"></div>
-                <div class="box" id="7"></div>
-                <div class="box" id="8"></div>
+            <div class="main">
+                <div class="logo">
+                    <img src="/images/ttt.svg">
+                    <div style="color: white; font-size: 20px; text-align: center; padding-top: 5px;"> 
+                        Single-player
+                    </div>
+                </div>
+                <div class="game-board">
+                    <div class="box" id="0"></div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                </div>
+                <!-- <div class="round1" id="roundDisplay">
+                    Round 1
+                </div> -->
+                <div class="show">
+                    <div class="round1" id="roundDisplay">
+                        Round 1
+                    </div>
+                    <div class="which-player">
+                        <i class="fa fa-chevron-right" id="chevronFirst" style="color: #FF8C00; size: 100px; "></i>
+                        <div style="color: #ffffff; padding-left: 5px;" id="displayFirst"> </div>
+                    </div>
+                    <div class="which-player">
+                        <i class="fa fa-chevron-right" id="chevronSecond" style="color: #FF8C00; size: 100px;"></i>
+                        <div style="color: #C0C0C0; padding-top: 5px; padding-left: 5px;" id="displaySecond"></div>
+                    </div>
+                </div>
+                <button class="restart">Restart</button>
+                <div class="show-history">
+                    <a href="#" id="showHistory">Show history</a>
+                </div>
+                <a href="mode.html">Exit Game</a>
             </div>
-            <div class="show">
-              <div class="round1">
-                   Round 1
-              </div>
-              <div class="which-player">
-                <i class="fa fa-chevron-right" style="color: #FF8C00; size: 100px;"></i>
-                <div style="color: #ffffff; padding-left: 5px;">Player 1</div>
-              </div>  
-                <div style="color: #C0C0C0; padding-top: 5px;">Player 2</div>
-          </div>
-            <button class="restart">Restart</button>
-            
-            <div class="show-history">
-              <a href="">Show history</a>
-            </div>
-            <a href="">Exit Game</a>
         </div>
-    </div>
         <div class="history">
             <div class="inner">
                 <div class="winners-heading">
@@ -74,17 +76,45 @@
                     </p>
                     <img src="/images/Trophy.svg">
                 </div>
-                <div class="winners">
+                <!-- <div class="winners">
                     <ol reversed>
-                        <li>Player 1</li>
-                        <li>Player 2</li>
-                        <li>Player 1</li>
-                        <li>Player 1</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ol>
+                </div> -->
+                <div class="winners">
+                    <ol id="winnersList" reversed> </ol>
                 </div>
             </div>
         </div>
     </div>
+    <div class="popup" id="winnerPopup" style="display: none; ">
+        <div class="winner-pop" id="winnerText" style="font-size: 40px; padding-top: 50px;">
+        </div>
+        <img src="/images/Trophy.svg">
+        <div class="div" >
+            <button class="play-again" id="playAgainButton">Next round</button>
+            <a href="mode.html" id="exitGameLink">Exit Game</a>
+        </div>    
+    </div>
+    <div id="historyPopup" class="history-popup" style="display: none;">
+        <img src="/images/Trophy.svg" alt="winner" style="width: 70px; padding-top: 10px ;">
+        <p style="font-size: 25px; color: white; font-weight: 500;">
+            Winners
+        </p>
+        <div class="winners">
+            <ol id="winnersList" reversed> </ol>
+        </div>
+        <a href="#" id="closeHistoryLink" style="display: block; margin-top: 10px; color: white; text-align: center; text-decoration: underline;">Close</a>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
+
+
+
+
+
+<!-- style="display: flex; flex-direction: column; align-items: center;" -->
