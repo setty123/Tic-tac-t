@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const historyPopup = document.getElementById("historyPopup");
     const closeHistoryLink = document.getElementById("closeHistoryLink");
 
-    // Player names
     const firstPlayerName = localStorage.getItem("firstPlayerName") || "Naruto";
     const secondPlayerName = localStorage.getItem("secondPlayerName") || "Uzumaki";
 
