@@ -2,7 +2,6 @@ const proceedButton = document.querySelector(".proceed");
 const firstPlayer = document.getElementById("input1");
 const secondPlayer = document.getElementById("input2");
 
-// Function to check if both inputs are filled
 function checkInputs() {
     if (firstPlayer.value.trim() && secondPlayer.value.trim()) {
         proceedButton.classList.add("show");
@@ -11,7 +10,6 @@ function checkInputs() {
     }
 }
 
-// Event listeners for inputs
 firstPlayer.addEventListener("input", checkInputs);
 secondPlayer.addEventListener("input", checkInputs);
 
